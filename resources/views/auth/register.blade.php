@@ -2,6 +2,7 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -60,8 +61,8 @@
     </div>
 
     <!-- Ilustrasi -->
-    <img src="{{ asset('images/foto-Photoroom.png') }}" alt="character" class="w-[300px] flex absolute right-20">
-    <img src="{{ asset('images/bocil-Photoroom.png') }}" alt="character" class="w-[300px] flex absolute left-20">
+    <img src="{{ asset('images/foto-Photoroom.png') }}" alt="character" class="w-[300px] flex absolute right-20 hidden lg:block">
+    <img src="{{ asset('images/bocil-Photoroom.png') }}" alt="character" class="w-[300px] flex absolute left-20 hidden lg:block">
 </div>
 
 </body>

@@ -2,11 +2,13 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pilih Mood</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="min-h-screen bg-gradient-to-r from-green-200 to-blue-300 flex items-center justify-center px-4">
+<body class="min-h-screen bg-gradient-to-r from-green-200 to-blue-300 flex items-center 
+lg:flex lg:items-center lg:justify-center px-[20px]">
 
 <div class="bg-white rounded-2xl shadow-xl p-10 w-full max-w-[700px] text-center">
 
@@ -22,7 +24,7 @@
     <form action="{{ route('mood.store') }}" method="POST">
         @csrf
 
-        <div class="grid grid-cols-4 gap-6">
+        <div class="grid grid-cols-3 lg:grid-cols-4 gap-6">
 
             <button name="mood" value="senang"
                 class="flex flex-col items-center p-6 bg-gray-100 rounded-xl shadow
